@@ -1,0 +1,194 @@
+.ptb-70 {
+  padding: 30px 0;
+}
+
+.why-choose-us-wrap h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.animate-border {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: #804494;
+  overflow: hidden;
+}
+.progress {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #ebebeb;
+  border-radius: 30px;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #804494;
+  transition: width 0.6s ease;
+}
+
+.progress-item+.progress-item {
+  margin-top: 24px;
+}
+
+.progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-title>h6 {
+  font-size: 0.95375rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/*progressbar animation*/
+
+.progress span {
+  display: block;
+  height: 100%;
+}
+
+.progress-line {
+  background-color: #804494;
+  -webkit-animation: progressBar 3s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: progressBar 3s ease-in-out;
+  -moz-animation-fill-mode: both;
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*progress circle css*/
+.circle-box {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.circle-box .chart span {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.easyPieChart {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.easyPieChart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.animate-border:after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 3px;
+  left: 15px;
+  bottom: 0;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  -webkit-animation: animborder 2s linear infinite;
+  animation: animborder 2s linear infinite;
+}
+
+@-webkit-keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px);
+  }
+}
+
+@keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px);
+  }
+}
+
+
+
+
+
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+.animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+}

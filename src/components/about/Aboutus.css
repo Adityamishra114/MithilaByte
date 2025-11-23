@@ -1,0 +1,234 @@
+/* About animation */
+/* first box */
+
+.overflow-auto {
+    overflow: auto !important
+}
+
+.overflow-hidden {
+    overflow: hidden !important
+}
+
+.position-static {
+    position: static !important
+}
+
+.position-relative {
+    position: relative !important
+}
+
+.position-absolute {
+    position: absolute !important
+}
+.about-img-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.about-img-wrap img {
+  display: block;
+}
+
+.about-us-img .about-single-img {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-img .about-us-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 85%;
+  z-index: 1;
+}
+.display-4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+.display-6 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+.ti-control-forward:before {
+  /* content: "\e6af"; */
+  font-family: 'themify';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+}
+.secondary-solid-btn {
+  color: #fff;
+    background: linear-gradient(200deg, #1f2127 -5.65%, #804494 45.63%, #34247d 97.6%);
+    letter-spacing: 1px;
+}
+
+.secondary-solid-btn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: white;
+  background: linear-gradient(70deg, #1f2127 -5.65%, #34247d 45.63%, #804494 97.6%);
+}
+
+.secondary-outline-btn {
+  color: #804494;
+  display: inline-block;
+  border: 1px solid #804494;
+}
+
+.secondary-outline-btn:hover {
+  background: #804494;
+  color: #ffffff;
+}
+.icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #6545d7;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.outline-btn,
+.secondary-solid-btn,
+.primary-solid-btn,
+.solid-white-btn,
+.outline-white-btn,
+.secondary-outline-btn {
+  padding: 12px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+}
+.animation_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background: #24C6DC;  */
+    /* background: -webkit-linear-gradient(to bottom, #514A9D, #24C6DC);  
+    background: linear-gradient(to bottom, #514A9D, #24C6DC);  */
+}
+
+.box1 div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(87, 27, 119);
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box1 div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate2 10s linear infinite;
+}
+
+.box1 div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate2 7s linear infinite;
+}
+
+.box1 div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate2 9s linear infinite;
+}
+
+.box1 div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate2 10s linear infinite;
+}
+
+.box1 div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate2 6s linear infinite;
+}
+
+.box1 div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate2 12s linear infinite;
+}
+
+.box1 div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate2 15s linear infinite;
+}
+
+.box1 div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate2 16s linear infinite;
+}
+
+.box1 div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate2 9s linear infinite;
+}
+
+.box1 div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate2 5s linear infinite;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: scale(0) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(-180deg);
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+
+
+
+.about_3dow h4 {
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.display-4 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media (max-width:800px) {
+    .but-gif {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .display-4 {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .display-6 {
+    font-size: .725rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+
+}

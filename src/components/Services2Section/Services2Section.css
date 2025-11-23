@@ -1,0 +1,87 @@
+/* ---------------------- */
+/* CARD STYLING BASE */
+/* ---------------------- */
+.card999 {
+  border: 1px solid #804494;
+  border-radius: 70px 5px 70px 5px;
+  text-align: center;
+  padding: 17px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 380px;
+  background: #1f2127;
+  transition: all 0.6s ease-in-out;
+}
+
+.card999::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0;
+  background: linear-gradient(70deg, #1f2127 -5.65%, #34247d 45.63%, #804494 97.6%);
+  transition: all 0.6s ease-in-out;
+}
+
+.card999:hover::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 50px;
+}
+
+.card999 h3 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-family: sans-serif;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.card999 p,
+.card999 span {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.card999:hover p,
+.card999:hover span {
+  color: rgb(112, 112, 112) !important;
+}
+
+.card999:hover .cardheading {
+  color: black;
+}
+
+.cardheading {
+  color: white;
+}
+
+.setpadding {
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+/* ---------------------- */
+/* RESPONSIVE DESIGN */
+/* ---------------------- */
+@media (max-width: 700px) {
+  .card999 {
+    border-radius: 50px 5px 50px 5px;
+    padding: 10px;
+    min-height: 300px;
+  }
+  .card999 p {
+    font-size: 13px;
+  }
+}
+
